@@ -37,58 +37,54 @@ The project follows the MVC (Model-View-Controller) architecture provided by Lar
 
 # 📁 Project Folder Structure
 
+```text
 HomeFix/
-│
 ├── app/
 │   ├── Http/
-│   │   ├── Controllers/
-│   │   │      ServiceController.php
-│   │   │      BookingController.php
-│   │   │      ReviewController.php
-│   │   │      AuthController.php
+│   │   └── Controllers/
+│   │       ├── ServiceController.php
+│   │       ├── BookingController.php
+│   │       ├── ReviewController.php
+│   │       └── AuthController.php
 │   │
-│   ├── Models/
-│          User.php
-│          Booking.php
-│          Service.php
-│          Technician.php
-│          Review.php
+│   └── Models/
+│       ├── User.php
+│       ├── Booking.php
+│       ├── Service.php
+│       ├── Technician.php
+│       └── Review.php
 │
 ├── bootstrap/
-│
 ├── config/
-│
 ├── database/
 │   ├── migrations/
-│   ├── seeders/
+│   └── seeders/
 │
 ├── public/
 │   ├── css/
 │   ├── js/
-│   ├── images/
+│   └── images/
 │
 ├── resources/
-│   ├── views/
+│   └── views/
 │       ├── layouts/
 │       ├── home.blade.php
 │       ├── services.blade.php
 │       ├── booking.blade.php
 │       ├── technician.blade.php
-│       ├── reviews.blade.php
+│       └── reviews.blade.php
 │
 ├── routes/
-│     web.php
+│   └── web.php
 │
 ├── storage/
-│
 ├── tests/
-│
 ├── vendor/
-│
 ├── .env
 ├── artisan
 ├── composer.json
 └── README.md
+```
 
 # 📂 Database Tables
 - users
