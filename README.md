@@ -36,6 +36,7 @@ The project follows the MVC (Model-View-Controller) architecture provided by Lar
 - XAMPP	Apache & MySQL Server
 
 # 📁 Project Folder Structure
+
 HomeFix/
 │
 ├── app/
