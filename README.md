@@ -1,4 +1,4 @@
-## 🏠 HomeFix – Home Repair Service Booking & Technician Rating Portal
+# 🏠 HomeFix – Home Repair Service Booking & Technician Rating Portal
 📌 Project Overview
 
 HomeFix is a web-based home repair service booking platform developed using the Laravel Framework. It allows users to book home repair services such as plumbing, electrical work, carpentry, painting, and more. Customers can view technician profiles, book appointments, and submit ratings and reviews after the service is completed.
@@ -21,7 +21,7 @@ The project follows the MVC (Model-View-Controller) architecture provided by Lar
 - Secure Authentication
 - Mobile Friendly Interface
 
-## 🛠 Technologies Used
+# 🛠 Technologies Used
 - Technology	Purpose
 - HTML5	Website Structure
 - CSS3	Styling
@@ -35,8 +35,7 @@ The project follows the MVC (Model-View-Controller) architecture provided by Lar
 - Composer	Dependency Management
 - XAMPP	Apache & MySQL Server
 
-## 📁 Project Folder Structure
----
+# 📁 Project Folder Structure
 HomeFix/
 │
 ├── app/
@@ -89,9 +88,8 @@ HomeFix/
 ├── artisan
 ├── composer.json
 └── README.md
----
 
-## 📂 Database Tables
+# 📂 Database Tables
 - users
 - services
 - technicians
@@ -100,8 +98,8 @@ HomeFix/
 - categories
 - password_reset_tokens
 
-## 📌 MVC Architecture
-# Model
+# 📌 MVC Architecture
+## Model
 
 Responsible for database operations.
 
@@ -115,7 +113,7 @@ Example
 
 - Review.php
   
-# View
+## View
 
 User Interface using Blade Templates.
 
@@ -127,7 +125,7 @@ Example
 
 - technician.blade.php
 
-# Controller
+## Controller
 
 Handles user requests.
 
@@ -139,7 +137,7 @@ Example
 
 - ReviewController
 
-## 👩‍💻 Author
+#👩‍💻 Author
 
 Ankita Meshram
 
@@ -151,6 +149,6 @@ Framework: Laravel
 
 Database: MySQL
 
-## 📜 License
+# 📜 License
 
 This project is created for educational purposes and learning Laravel framework.
