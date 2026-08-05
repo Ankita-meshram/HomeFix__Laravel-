@@ -141,11 +141,6 @@ Send Message
 
 </div>
 
-<footer class="bg-dark text-center text-white p-3">
-
-© 2026 HomeFix. All Rights Reserved.
-
-</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
