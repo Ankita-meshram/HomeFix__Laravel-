@@ -180,14 +180,35 @@ http://127.0.0.1:8000
 
 ---
 
-## Screenshots 
+## Screenshots
+### Login Page 
+
+<img width="506" height="213" alt="image" src="https://github.com/user-attachments/assets/d2bca0b1-2f24-4d7b-81b7-8232868de960" />
+
+### User Registration Page
+
+<img width="445" height="355" alt="image" src="https://github.com/user-attachments/assets/9fb64505-8ff9-4bf9-a7cb-b38db7f129ff" />
+
 ### Home Page 
 
-<img width="746" height="440" alt="image" src="https://github.com/user-attachments/assets/a636b41e-0243-4593-8ba6-55b341aae5f6" />
+<img width="517" height="381" alt="image" src="https://github.com/user-attachments/assets/51d6499f-4631-4d9d-8c85-4cbbb49f26b4" />
+
+
+### Services Page 
+
+<img width="509" height="275" alt="image" src="https://github.com/user-attachments/assets/5741edbb-f407-448f-b695-19135eb2fe72" />
+
+### Technicians Page
+
+<img width="380" height="346" alt="image" src="https://github.com/user-attachments/assets/e6f9f5f5-77a0-4d92-a9c5-cdf9b4d45a65" />
 
 ### Book Service Page 
 
-<img width="854" height="443" alt="image" src="https://github.com/user-attachments/assets/65cfa27a-9d64-43bd-9fd8-5a8952434333" />
+<img width="497" height="339" alt="image" src="https://github.com/user-attachments/assets/9c5aa4cd-b748-4545-88f4-8023b3f89aff" />
+
+### My Bookings Page 
+
+<img width="689" height="396" alt="image" src="https://github.com/user-attachments/assets/ead53728-b88e-4de6-87ef-1540c8cdd613" />
 
 ### Contact Page 
 
@@ -195,11 +216,23 @@ http://127.0.0.1:8000
 
 ### About Page
 
-<img width="919" height="433" alt="image" src="https://github.com/user-attachments/assets/5e46e14d-64ea-4474-9359-b96d20c59c72" />
+<img width="281" height="440" alt="image" src="https://github.com/user-attachments/assets/abe7b37f-cb60-4f74-9e39-256308dd8684" />
 
-### Technicians Page
+### Contact Page
 
-<img width="919" height="368" alt="image" src="https://github.com/user-attachments/assets/98497b1c-49db-4c7c-abdb-07eb64e64c0d" />
+<img width="673" height="308" alt="image" src="https://github.com/user-attachments/assets/62856641-70c7-4e65-9596-0c511e5f22b7" />
+
+### Admin Login Page
+
+<img width="666" height="284" alt="image" src="https://github.com/user-attachments/assets/75186850-ccd1-4302-b174-29e64ff5b6db" />
+
+### Admin Dashboard Page
+
+<img width="949" height="434" alt="image" src="https://github.com/user-attachments/assets/eb8b08e7-eef4-4f2f-80d3-0791e768d9ab" />
+
+### Database
+
+<img width="955" height="324" alt="image" src="https://github.com/user-attachments/assets/1b8871ce-5a6f-49c4-91a2-2b77a07f84fd" />
 
 
 ## 🚀 Future Enhancements
