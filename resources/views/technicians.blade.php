@@ -1,185 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>HomeFix - Technicians</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+          rel="stylesheet">
 
     <style>
-        .card:hover{
+
+        .card:hover {
             transform: translateY(-8px);
             transition: .3s;
         }
 
-        .rating{
-            color:orange;
-            font-size:20px;
+        .rating {
+            color: orange;
+            font-size: 20px;
         }
+
+        .technician-image {
+            height: 250px;
+            object-fit: cover;
+        }
+
     </style>
 
 </head>
+
 <body>
 
+
+<!-- Navbar -->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-<div class="container">
 
-<a class="navbar-brand fw-bold" href="/">🏠 HomeFix</a>
+    <div class="container">
 
-<button class="navbar-toggler"
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#navbarNav">
+        <a class="navbar-brand fw-bold" href="/">
+            🏠 HomeFix
+        </a>
 
-<span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
 
-</button>
+            <span class="navbar-toggler-icon"></span>
 
-<div class="collapse navbar-collapse" id="navbarNav">
+        </button>
 
-<ul class="navbar-nav ms-auto">
 
-<li class="nav-item">
-<a class="nav-link" href="/">Home</a>
-</li>
+        <div class="collapse navbar-collapse" id="navbarNav">
 
-<li class="nav-item">
-<a class="nav-link" href="/services">Services</a>
-</li>
+            <ul class="navbar-nav ms-auto">
 
-<li class="nav-item">
-<a class="nav-link active" href="/technicians">Technicians</a>
-</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        Home
+                    </a>
+                </li>
 
-<li class="nav-item">
-<a class="nav-link" href="/booking">Book Service</a>
-</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">
+                        Services
+                    </a>
+                </li>
 
-<li class="nav-item">
-<a class="nav-link" href="/about">About</a>
-</li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/technicians">
+                        Technicians
+                    </a>
+                </li>
 
-<li class="nav-item">
-<a class="nav-link" href="/contact">Contact</a>
-</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/booking">
+                        Book Service
+                    </a>
+                </li>
 
-</ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">
+                        About
+                    </a>
+                </li>
 
-</div>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">
+                        Contact
+                    </a>
+                </li>
 
-</div>
+            </ul>
+
+        </div>
+
+    </div>
+
 </nav>
+
+
+<!-- Technicians -->
 
 <div class="container py-5">
 
-<h1 class="text-center mb-5">
-Our Expert Technicians
-</h1>
+    <h1 class="text-center mb-5">
+        Our Expert Technicians
+    </h1>
 
-<div class="row g-4">
 
-<div class="col-md-4">
+    <!-- Loading -->
 
-<div class="card shadow">
+    <div id="loading"
+         class="text-center">
 
-<img src="https://via.placeholder.com/300x250"
-class="card-img-top">
+        <div class="spinner-border text-primary"
+             role="status">
 
-<div class="card-body text-center">
+        </div>
 
-<h4>Rahul Sharma</h4>
+        <p class="mt-2">
+            Loading technicians...
+        </p>
 
-<p>Electrician</p>
+    </div>
 
-<div class="rating">
-★★★★★
-</div>
 
-<p class="mt-2">
-Experience : 6 Years
-</p>
+    <!-- Error -->
 
-<a href="/booking"
-class="btn btn-primary">
-Book Now
-</a>
+    <div id="errorMessage"
+         class="alert alert-danger d-none">
 
-</div>
+    </div>
 
-</div>
 
-</div>
+    <!-- Technicians Container -->
 
-<div class="col-md-4">
+    <div id="techniciansContainer"
+         class="row g-4">
 
-<div class="card shadow">
-
-<img src="https://via.placeholder.com/300x250"
-class="card-img-top">
-
-<div class="card-body text-center">
-
-<h4>Amit Verma</h4>
-
-<p>Plumber</p>
-
-<div class="rating">
-★★★★☆
-</div>
-
-<p class="mt-2">
-Experience : 8 Years
-</p>
-
-<a href="/booking"
-class="btn btn-primary">
-Book Now
-</a>
+    </div>
 
 </div>
 
-</div>
 
-</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+</script>
 
-<div class="col-md-4">
 
-<div class="card shadow">
+<script>
 
-<img src="https://via.placeholder.com/300x250"
-class="card-img-top">
+document.addEventListener("DOMContentLoaded", function () {
 
-<div class="card-body text-center">
+    const container =
+        document.getElementById("techniciansContainer");
 
-<h4>Suresh Patel</h4>
+    const loading =
+        document.getElementById("loading");
 
-<p>Carpenter</p>
+    const errorMessage =
+        document.getElementById("errorMessage");
 
-<div class="rating">
-★★★★★
-</div>
 
-<p class="mt-2">
-Experience : 10 Years
-</p>
+    // Load technicians from API
 
-<a href="/booking"
-class="btn btn-primary">
-Book Now
-</a>
+    fetch("/api/technicians")
 
-</div>
+        .then(response => {
 
-</div>
+            if (!response.ok) {
 
-</div>
+                throw new Error(
+                    "Failed to load technicians."
+                );
 
-</div>
+            }
 
-</div>
+            return response.json();
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+        })
+
+        .then(technicians => {
+
+            loading.classList.add("d-none");
+
+
+            if (technicians.length === 0) {
+
+                container.innerHTML = `
+
+                    <div class="col-12 text-center">
+
+                        <p class="text-muted">
+                            No technicians available.
+                        </p>
+
+                    </div>
+
+                `;
+
+                return;
+
+            }
+
+
+            technicians.forEach(technician => {
+
+                const rating =
+                    Math.round(
+                        parseFloat(technician.rating || 0)
+                    );
+
+
+                let stars = "";
+
+                for (let i = 1; i <= 5; i++) {
+
+                    if (i <= rating) {
+
+                        stars += "★";
+
+                    } else {
+
+                        stars += "☆";
+
+                    }
+
+                }
+
+
+                const card =
+                    document.createElement("div");
+
+                card.className =
+                    "col-md-4";
+
+
+                card.innerHTML = `
+
+                    <div class="card shadow h-100">
+
+                        <img src="https://via.placeholder.com/300x250"
+                             class="card-img-top technician-image"
+                             alt="${technician.name}">
+
+
+                        <div class="card-body text-center">
+
+                            <h4>
+                                ${technician.name}
+                            </h4>
+
+
+                            <p>
+                                ${technician.specialization}
+                            </p>
+
+
+                            <div class="rating">
+
+                                ${stars}
+
+                            </div>
+
+
+                            <p class="mt-2">
+
+                                Experience :
+                                ${technician.experience || "Not specified"}
+
+                            </p>
+
+
+                            <p>
+
+                                📞 ${technician.phone || "Not available"}
+
+                            </p>
+
+
+                            <p>
+
+                                ${
+                                    technician.available
+                                    ? "🟢 Available"
+                                    : "🔴 Not Available"
+                                }
+
+                            </p>
+
+
+                            ${
+                                technician.available
+                                ?
+
+                                `<a href="/booking"
+                                   class="btn btn-primary">
+
+                                    Book Now
+
+                                </a>`
+
+                                :
+
+                                `<button class="btn btn-secondary"
+                                         disabled>
+
+                                    Not Available
+
+                                </button>`
+                            }
+
+                        </div>
+
+                    </div>
+
+                `;
+
+
+                container.appendChild(card);
+
+            });
+
+        })
+
+        .catch(error => {
+
+            console.error(
+                "Technician loading error:",
+                error
+            );
+
+            loading.classList.add("d-none");
+
+            errorMessage.textContent =
+                "Unable to load technicians.";
+
+            errorMessage.classList.remove("d-none");
+
+        });
+
+});
+
+</script>
 
 </body>
+
 </html>
