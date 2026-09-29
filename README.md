@@ -210,10 +210,6 @@ http://127.0.0.1:8000
 
 <img width="689" height="396" alt="image" src="https://github.com/user-attachments/assets/ead53728-b88e-4de6-87ef-1540c8cdd613" />
 
-### Contact Page 
-
-<img width="926" height="404" alt="image" src="https://github.com/user-attachments/assets/4bb83644-9632-412c-995b-9922a798a223" />
-
 ### About Page
 
 <img width="281" height="440" alt="image" src="https://github.com/user-attachments/assets/abe7b37f-cb60-4f74-9e39-256308dd8684" />
